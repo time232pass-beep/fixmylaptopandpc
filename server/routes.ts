@@ -39,6 +39,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  app.delete("/api/reviews", async (req, res) => {
+    try {
+      await storage.clearAllReviews();
+      res.json({ message: "All reviews cleared successfully" });
+    } catch (error) {
+      res.status(500).json({ message: "Failed to clear reviews" });
+    }
+  });
+
   app.get("/api/gallery", async (req, res) => {
     try {
       const items = await storage.getGalleryItems();

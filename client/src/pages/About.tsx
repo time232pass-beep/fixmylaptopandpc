@@ -152,7 +152,6 @@ export default function About() {
                   <h3 className="font-semibold text-foreground mb-2">Business Hours</h3>
                   <div className="text-muted-foreground space-y-1">
                     <p>Open 24 Hours</p>
-                    <p>(Diwali/Balipratipada might affect hours)</p>
                   </div>
                 </div>
                 <div className="pt-4">

@@ -14,7 +14,7 @@ export default function Home() {
 
   const topReviews = reviews?.slice(0, 3) || [];
 
-  const whatsappNumber = "919876543210";
+  const whatsappNumber = "919373285987";
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -29,11 +29,17 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,60%,20%)] via-[hsl(215,60%,20%)]/90 to-[hsl(215,60%,20%)]/70" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <Clock className="w-4 h-4" />
+            Open 24 Hours
+          </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            FixMy Laptop & PC<br />Expert Repair Services
+            Laptop & Computer Services<br />
+            <span className="text-blue-300">Online & Doorstep Support</span>
           </h1>
           <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Online & Doorstep Support • 24/7 Service • Yewalewadi, Pune
+            Repairing • Upgrade • Assembling • Support<br />
+            <span className="text-lg">Yewalewadi, Pune • 24/7 Available</span>
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -66,6 +72,12 @@ export default function Home() {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Professional repair services for all your devices with quick turnaround and affordable pricing
             </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
+              <div className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Repairing</div>
+              <div className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Upgrade</div>
+              <div className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Assembling</div>
+              <div className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">Support</div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -224,11 +236,34 @@ export default function Home() {
               </Card>
               <Card className="text-center p-6">
                 <div className="w-full h-full flex flex-col items-center justify-center">
-                  <Users className="w-8 h-8 text-primary mb-2" />
-                  <div className="text-sm font-semibold text-foreground">Serving</div>
-                  <div className="text-xs text-muted-foreground">Yewalewadi, Pune</div>
+                  <Clock className="w-8 h-8 text-primary mb-2" />
+                  <div className="text-sm font-semibold text-foreground">24/7</div>
+                  <div className="text-xs text-muted-foreground">Service Available</div>
                 </div>
               </Card>
+            </div>
+            
+            <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200">
+              <div className="text-center">
+                <h3 className="text-lg font-semibold text-foreground mb-2">Trusted by Google Business Profile</h3>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Verified business with 11+ views and growing customer base in Yewalewadi, Pune
+                </p>
+                <div className="flex flex-wrap justify-center gap-4 text-sm">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-muted-foreground">Google Verified</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <span className="text-muted-foreground">Plus Code: CVMQ+V5</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <span className="text-muted-foreground">24/7 Available</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -236,39 +271,60 @@ export default function Home() {
 
       <section className="py-12 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div className="text-center sm:text-left">
-              <h2 className="text-2xl sm:text-3xl font-bold text-primary-foreground mb-2">
-                Need Urgent Repair?
-              </h2>
-              <p className="text-primary-foreground/90 text-lg">
-                Contact us now for immediate assistance
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div className="text-center sm:text-left">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-primary-foreground mb-2">
+                    Need Urgent Repair?
+                  </h2>
+                  <p className="text-primary-foreground/90 text-lg">
+                    Contact us now for immediate assistance
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    asChild
+                    className="gap-2 bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
+                    data-testid="button-urgent-call"
+                  >
+                    <a href="tel:+919373285987" className="flex items-center gap-2">
+                      <Phone className="w-5 h-5" />
+                      Call Now
+                    </a>
+                  </Button>
+                  <Button
+                    size="lg"
+                    asChild
+                    className="gap-2 bg-chart-3 hover:bg-chart-3 text-white border-0"
+                    data-testid="button-urgent-whatsapp"
+                  >
+                    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <SiWhatsapp className="w-5 h-5" />
+                      WhatsApp Us
+                    </a>
+                  </Button>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="gap-2 bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
-                data-testid="button-urgent-call"
-              >
-                <a href="tel:+919876543210" className="flex items-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Call Now
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                asChild
-                className="gap-2 bg-chart-3 hover:bg-chart-3 text-white border-0"
-                data-testid="button-urgent-whatsapp"
-              >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                  <SiWhatsapp className="w-5 h-5" />
-                  WhatsApp Us
-                </a>
-              </Button>
+            <div className="bg-white/10 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-primary-foreground mb-4">Business Info</h3>
+              <div className="space-y-3 text-sm">
+                <div>
+                  <span className="text-primary-foreground/80">Plus Code:</span>
+                  <p className="text-primary-foreground font-mono">CVMQ+V5 Yewalewadi</p>
+                </div>
+                <div>
+                  <span className="text-primary-foreground/80">Hours:</span>
+                  <p className="text-primary-foreground">Open 24 Hours</p>
+                </div>
+                <div>
+                  <span className="text-primary-foreground/80">Service Area:</span>
+                  <p className="text-primary-foreground">Yewalewadi, Pune & Surrounding Areas</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

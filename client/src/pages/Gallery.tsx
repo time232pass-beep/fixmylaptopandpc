@@ -80,11 +80,17 @@ export default function Gallery() {
       <section className="bg-gradient-to-r from-primary to-primary/80 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4">
-            Gallery
+            Our Work Gallery
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Explore our workspace, repair work, and satisfied customers
+            See our professional repair work, satisfied customers, and state-of-the-art workspace
           </p>
+          <div className="flex flex-wrap justify-center gap-4 mt-6">
+            <div className="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium">Before & After</div>
+            <div className="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium">Repair Work</div>
+            <div className="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium">Customer Satisfaction</div>
+            <div className="bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium">Professional Tools</div>
+          </div>
         </div>
       </section>
 

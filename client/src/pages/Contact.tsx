@@ -55,7 +55,7 @@ export default function Contact() {
     mutation.mutate(data);
   };
 
-  const whatsappUrl = "https://wa.me/919876543210";
+  const whatsappUrl = "https://wa.me/919373285987";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -246,8 +246,8 @@ export default function Contact() {
                     <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-foreground mb-1">Phone</h4>
-                      <a href="tel:+919876543210" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                        +91 98765 43210
+                      <a href="tel:+919373285987" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                        +91 93732 85987
                       </a>
                     </div>
                   </div>
@@ -267,8 +267,7 @@ export default function Contact() {
                     <div>
                       <h4 className="font-medium text-foreground mb-1">Business Hours</h4>
                       <p className="text-sm text-muted-foreground">
-                        Open 24 Hours<br />
-                        (Diwali/Balipratipada might affect hours)
+                        Open 24 Hours
                       </p>
                     </div>
                   </div>

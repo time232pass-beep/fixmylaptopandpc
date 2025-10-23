@@ -7,7 +7,7 @@ import pcImage from "@assets/generated_images/PC_desktop_repair_service_67fdfe34
 import mobileImage from "@assets/generated_images/Mobile_phone_repair_service_75cffbac.png";
 
 export default function Services() {
-  const whatsappUrl = "https://wa.me/919876543210";
+  const whatsappUrl = "https://wa.me/919373285987";
 
   const services = [
     {

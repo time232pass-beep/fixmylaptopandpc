@@ -12,6 +12,7 @@ export interface IStorage {
   getReviews(): Promise<Review[]>;
   getReview(id: string): Promise<Review | undefined>;
   createReview(review: InsertReview): Promise<Review>;
+  clearAllReviews(): Promise<void>;
   
   getGalleryItems(): Promise<GalleryItem[]>;
   getGalleryItem(id: string): Promise<GalleryItem | undefined>;
@@ -34,76 +35,7 @@ export class MemStorage implements IStorage {
   }
 
   private seedInitialData() {
-    const initialReviews: Review[] = [
-      {
-        id: randomUUID(),
-        customerName: "Rajesh Kumar",
-        rating: 5,
-        comment: "Excellent service! They fixed my laptop screen in just one day. Very professional and affordable. Highly recommended!",
-        serviceType: "Laptop Repair",
-        date: new Date("2024-10-15"),
-      },
-      {
-        id: randomUUID(),
-        customerName: "Priya Sharma",
-        rating: 5,
-        comment: "Best repair shop in Yewalewadi! They recovered all my data from a dead hard drive. Very thankful for their expertise.",
-        serviceType: "Data Recovery",
-        date: new Date("2024-10-12"),
-      },
-      {
-        id: randomUUID(),
-        customerName: "Amit Patel",
-        rating: 4,
-        comment: "Quick and efficient PC upgrade service. They installed new RAM and SSD, now my PC runs like new. Fair pricing too.",
-        serviceType: "PC Repair",
-        date: new Date("2024-10-10"),
-      },
-      {
-        id: randomUUID(),
-        customerName: "Sneha Desai",
-        rating: 5,
-        comment: "My phone screen was shattered. They replaced it the same day with genuine parts. Perfect work and warranty included!",
-        serviceType: "Mobile Repair",
-        date: new Date("2024-10-08"),
-      },
-      {
-        id: randomUUID(),
-        customerName: "Vikram Singh",
-        rating: 5,
-        comment: "Very honest and transparent service. They diagnosed the issue accurately and fixed it at reasonable cost. Will definitely come back!",
-        serviceType: "Laptop Repair",
-        date: new Date("2024-10-05"),
-      },
-      {
-        id: randomUUID(),
-        customerName: "Anita Rao",
-        rating: 4,
-        comment: "Good service for laptop keyboard replacement. Took slightly longer than expected but the quality is excellent.",
-        serviceType: "Laptop Repair",
-        date: new Date("2024-09-28"),
-      },
-      {
-        id: randomUUID(),
-        customerName: "Suresh Naik",
-        rating: 5,
-        comment: "Professional technicians who know what they're doing. Fixed my gaming PC and it's running perfectly now. Great experience!",
-        serviceType: "PC Repair",
-        date: new Date("2024-09-25"),
-      },
-      {
-        id: randomUUID(),
-        customerName: "Meena Joshi",
-        rating: 5,
-        comment: "Replaced my laptop battery and cleaned the entire system. Now it runs much faster and battery lasts all day. Thank you!",
-        serviceType: "Laptop Repair",
-        date: new Date("2024-09-20"),
-      },
-    ];
-
-    initialReviews.forEach(review => {
-      this.reviews.set(review.id, review);
-    });
+    // No initial reviews - starting with empty reviews
   }
 
   async getReviews(): Promise<Review[]> {
@@ -125,6 +57,10 @@ export class MemStorage implements IStorage {
     };
     this.reviews.set(id, review);
     return review;
+  }
+
+  async clearAllReviews(): Promise<void> {
+    this.reviews.clear();
   }
 
   async getGalleryItems(): Promise<GalleryItem[]> {
