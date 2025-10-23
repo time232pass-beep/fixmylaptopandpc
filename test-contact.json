@@ -1,0 +1,7 @@
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "phone": "+919999999999",
+  "service": "laptop-repair",
+  "message": "Testing email notification system from FixMy Laptop & PC contact form"
+}

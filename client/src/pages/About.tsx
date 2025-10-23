@@ -2,8 +2,6 @@ import { MapPin, Award, CheckCircle, Clock, Shield } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import shopExterior from "@assets/generated_images/Repair_shop_exterior_storefront_31c05880.png";
-import shopInterior from "@assets/generated_images/Repair_shop_interior_workspace_789dda39.png";
 
 export default function About() {
   const whatsappUrl = "https://wa.me/919373285987";
@@ -78,21 +76,35 @@ export default function About() {
                 </Button>
               </div>
             </div>
-            <div className="space-y-6">
-              <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src={shopExterior}
-                  alt="FixMy Laptop & PC shop exterior"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src={shopInterior}
-                  alt="FixMy Laptop & PC shop interior"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="grid grid-cols-2 gap-6">
+              <Card className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100">
+                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-3xl font-bold text-foreground mb-2">5+</div>
+                <div className="text-sm text-muted-foreground">Years of Excellence</div>
+              </Card>
+              <Card className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-3xl font-bold text-foreground mb-2">98%</div>
+                <div className="text-sm text-muted-foreground">Customer Satisfaction</div>
+              </Card>
+              <Card className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CheckCircle className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-3xl font-bold text-foreground mb-2">5000+</div>
+                <div className="text-sm text-muted-foreground">Devices Repaired</div>
+              </Card>
+              <Card className="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100">
+                <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-3xl font-bold text-foreground mb-2">24/7</div>
+                <div className="text-sm text-muted-foreground">Service Available</div>
+              </Card>
             </div>
           </div>
         </div>

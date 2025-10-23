@@ -5,7 +5,6 @@ import { SiWhatsapp } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { Review } from "@shared/schema";
-import heroImage from "@assets/generated_images/Professional_laptop_repair_workspace_hero_b157a959.png";
 
 export default function Home() {
   const { data: reviews } = useQuery<Review[]>({
@@ -19,14 +18,17 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt="Professional laptop repair workspace"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,60%,20%)] via-[hsl(215,60%,20%)]/90 to-[hsl(215,60%,20%)]/70" />
+      <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10">
+            <Laptop className="w-32 h-32 text-white transform -rotate-12" />
+          </div>
+          <div className="absolute bottom-20 right-20">
+            <Monitor className="w-40 h-40 text-white transform rotate-12" />
+          </div>
+          <div className="absolute top-40 right-40">
+            <Smartphone className="w-24 h-24 text-white transform rotate-6" />
+          </div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
