@@ -4,6 +4,8 @@ import { storage } from "./storage";
 import { notifyAll } from "./notify";
 import { insertReviewSchema, insertGalleryItemSchema, insertContactSubmissionSchema } from "@shared/schema";
 
+console.log('[ROUTES MODULE] routes.ts loaded, notifyAll available:', typeof notifyAll);
+
 export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/reviews", async (req, res) => {
     try {

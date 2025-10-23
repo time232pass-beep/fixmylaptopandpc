@@ -1,5 +1,8 @@
 import nodemailer from 'nodemailer';
 
+// Module load verification
+console.log('[NOTIFY MODULE] notify.ts loaded successfully');
+
 export interface ContactPayload {
   name: string;
   email: string;
