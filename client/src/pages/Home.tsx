@@ -30,10 +30,10 @@ export default function Home() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Expert Laptop & PC Repair<br />in Yewalewadi, Pune
+            FixMy Laptop & PC<br />Expert Repair Services
           </h1>
           <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Fast turnaround, certified technicians, and genuine parts with warranty
+            Online & Doorstep Support • 24/7 Service • Yewalewadi, Pune
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -131,6 +131,43 @@ export default function Home() {
 
       <section className="py-16 sm:py-20 bg-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+              Online & Doorstep Support
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              We bring our expertise to your doorstep with 24/7 availability for all your repair needs
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <Card className="text-center p-6">
+              <div className="w-16 h-16 bg-chart-2/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-8 h-8 text-chart-2" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">24/7 Service</h3>
+              <p className="text-muted-foreground text-sm">
+                Available round the clock for urgent repairs and support
+              </p>
+            </Card>
+            <Card className="text-center p-6">
+              <div className="w-16 h-16 bg-chart-2/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-8 h-8 text-chart-2" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Doorstep Service</h3>
+              <p className="text-muted-foreground text-sm">
+                We come to you for pickup and delivery of your devices
+              </p>
+            </Card>
+            <Card className="text-center p-6">
+              <div className="w-16 h-16 bg-chart-2/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Laptop className="w-8 h-8 text-chart-2" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">Online Support</h3>
+              <p className="text-muted-foreground text-sm">
+                Remote assistance and guidance for software issues
+              </p>
+            </Card>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">

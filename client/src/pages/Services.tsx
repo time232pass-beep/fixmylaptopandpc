@@ -97,10 +97,10 @@ export default function Services() {
       <section className="bg-gradient-to-r from-primary to-primary/80 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-primary-foreground mb-4">
-            Our Services
+            Laptop & Computer Services
           </h1>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Professional repair services for all your devices with transparent pricing and quality guarantee
+            Online & Doorstep Support • Repairing • Upgrade • Assembling • Support
           </p>
         </div>
       </section>

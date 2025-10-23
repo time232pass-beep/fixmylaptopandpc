@@ -143,7 +143,7 @@ export default function About() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Address</h3>
                   <p className="text-muted-foreground">
-                    Shop No. 5, Main Road<br />
+                    Pansare Nagar, Lane No. 3<br />
                     Yewalewadi, Pune - 411048<br />
                     Maharashtra, India
                   </p>
@@ -151,8 +151,8 @@ export default function About() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Business Hours</h3>
                   <div className="text-muted-foreground space-y-1">
-                    <p>Monday - Saturday: 10:00 AM - 8:00 PM</p>
-                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                    <p>Open 24 Hours</p>
+                    <p>(Diwali/Balipratipada might affect hours)</p>
                   </div>
                 </div>
                 <div className="pt-4">

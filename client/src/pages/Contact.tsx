@@ -235,7 +235,7 @@ export default function Contact() {
                     <div>
                       <h4 className="font-medium text-foreground mb-1">Address</h4>
                       <p className="text-sm text-muted-foreground">
-                        Shop No. 5, Main Road<br />
+                        Pansare Nagar, Lane No. 3<br />
                         Yewalewadi, Pune - 411048<br />
                         Maharashtra, India
                       </p>
@@ -256,8 +256,8 @@ export default function Contact() {
                     <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-foreground mb-1">Email</h4>
-                      <a href="mailto:contact@fixmylaptop.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                        contact@fixmylaptop.com
+                      <a href="mailto:contact@fixmylaptopandpc.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                        contact@fixmylaptopandpc.com
                       </a>
                     </div>
                   </div>
@@ -267,8 +267,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-medium text-foreground mb-1">Business Hours</h4>
                       <p className="text-sm text-muted-foreground">
-                        Mon - Sat: 10:00 AM - 8:00 PM<br />
-                        Sunday: 11:00 AM - 6:00 PM
+                        Open 24 Hours<br />
+                        (Diwali/Balipratipada might affect hours)
                       </p>
                     </div>
                   </div>

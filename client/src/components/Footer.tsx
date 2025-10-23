@@ -60,7 +60,9 @@ export function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-1 text-muted-foreground" />
                 <p className="text-muted-foreground">
-                  Yewalewadi, Pune, Maharashtra 411048
+                  Pansare Nagar, Lane No. 3<br />
+                  Yewalewadi, Pune - 411048<br />
+                  Maharashtra, India
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -77,13 +79,13 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-muted-foreground" />
-                <a href="mailto:contact@fixmy.com" className="text-muted-foreground hover:text-primary text-sm transition-colors" data-testid="link-footer-email">
-                  contact@fixmy.com
+                <a href="mailto:contact@fixmylaptopandpc.com" className="text-muted-foreground hover:text-primary text-sm transition-colors" data-testid="link-footer-email">
+                  contact@fixmylaptopandpc.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-muted-foreground" />
-                <p className="text-muted-foreground">Mon - Sun: 9:00 AM - 9:00 PM</p>
+                <p className="text-muted-foreground">Open 24 Hours</p>
               </div>
             </div>
 
@@ -102,7 +104,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-card-border mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} FixMy. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} FixMy Laptop & PC. All rights reserved.</p>
           <div className="flex items-center gap-4 text-xs text-muted-foreground">
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>

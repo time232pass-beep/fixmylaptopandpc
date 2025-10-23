@@ -10,10 +10,10 @@ export function Navigation() {
               <img
                 className="h-8 w-8"
                 src="/favicon.png"
-                alt="FixMyWebsite"
+                alt="FixMy Laptop & PC"
               />
               <span className="ml-2 text-xl font-bold text-gray-900">
-                FixMyWebsite
+                FixMy Laptop & PC
               </span>
             </Link>
           </div>
