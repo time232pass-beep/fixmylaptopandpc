@@ -16,8 +16,16 @@ export async function notifyAll(payload: ContactPayload) {
   const smtpPass = process.env.SMTP_PASS;
   const notifyTo = process.env.NOTIFY_TO || 'fixmylaptopandpc@gmail.com';
 
+  console.log('[NOTIFY] Email config check:', {
+    hasSmtpUser: !!smtpUser,
+    hasSmtpPass: !!smtpPass,
+    notifyTo,
+    smtpUserPrefix: smtpUser?.substring(0, 5) + '***'
+  });
+
   if (smtpUser && smtpPass) {
     try {
+      console.log('[NOTIFY] Creating email transporter...');
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: { user: smtpUser, pass: smtpPass },
@@ -32,17 +40,22 @@ export async function notifyAll(payload: ContactPayload) {
         `Message: ${payload.message}`,
       ].join('\n');
 
+      console.log('[NOTIFY] Sending email to:', notifyTo);
       const info = await transporter.sendMail({
         from: smtpUser,
         to: notifyTo,
         subject,
         text,
       });
+      console.log('[NOTIFY] Email sent successfully:', info.messageId);
       results.email = { messageId: info.messageId };
     } catch (e) {
-      // swallow errors to avoid breaking request flow
+      // Log error but don't break request flow
+      console.error('[NOTIFY] Email send error:', (e as Error).message);
       results.email = { error: (e as Error).message };
     }
+  } else {
+    console.log('[NOTIFY] Email skipped - missing SMTP credentials');
   }
 
   // WhatsApp (Meta Cloud API)
