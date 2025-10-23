@@ -1,10 +1,8 @@
 import { Laptop, Monitor, Smartphone, CheckCircle, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 import { SiWhatsapp } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import laptopImage from "@assets/generated_images/Laptop_repair_service_close-up_29e3670d.png";
-import pcImage from "@assets/generated_images/PC_desktop_repair_service_67fdfe34.png";
-import mobileImage from "@assets/generated_images/Mobile_phone_repair_service_75cffbac.png";
 
 export default function Services() {
   const whatsappUrl = "https://wa.me/919373285987";
@@ -13,7 +11,6 @@ export default function Services() {
     {
       title: "Laptop Repair Services",
       icon: Laptop,
-      image: laptopImage,
       priceRange: "₹500 - ₹5,000",
       description: "Comprehensive laptop repair services for all brands and models. Our expert technicians diagnose and fix hardware and software issues quickly.",
       features: [
@@ -32,7 +29,6 @@ export default function Services() {
     {
       title: "PC & Desktop Repair",
       icon: Monitor,
-      image: pcImage,
       priceRange: "₹400 - ₹8,000",
       description: "Complete desktop PC repair and upgrade services. From component replacement to custom builds, we handle all your desktop needs.",
       features: [
@@ -51,7 +47,6 @@ export default function Services() {
     {
       title: "Mobile Repair Services",
       icon: Smartphone,
-      image: mobileImage,
       priceRange: "₹300 - ₹4,000",
       description: "Professional mobile phone repair services for all major brands. Fast turnaround with quality parts and workmanship.",
       features: [
@@ -111,20 +106,9 @@ export default function Services() {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
+                className="grid grid-cols-1 gap-8 lg:gap-12 items-start"
               >
-                <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className={index % 2 === 1 ? "lg:order-1" : ""}>
+                <div>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-md flex items-center justify-center">
                       <service.icon className="w-6 h-6 text-primary" />

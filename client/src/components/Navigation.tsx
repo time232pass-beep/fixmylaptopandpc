@@ -32,12 +32,6 @@ export function Navigation() {
               Services
             </Link>
             <Link
-              href="/gallery"
-              className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-            >
-              Gallery
-            </Link>
-            <Link
               href="/reviews"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >

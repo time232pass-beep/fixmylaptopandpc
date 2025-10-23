@@ -79,8 +79,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-muted-foreground" />
-                <a href="mailto:contact@fixmylaptopandpc.com" className="text-muted-foreground hover:text-primary text-sm transition-colors" data-testid="link-footer-email">
-                  contact@fixmylaptopandpc.com
+                <a href="mailto:fixmylaptopandpc@gmail.com" className="text-muted-foreground hover:text-primary text-sm transition-colors" data-testid="link-footer-email">
+                  fixmylaptopandpc@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">

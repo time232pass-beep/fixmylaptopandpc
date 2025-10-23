@@ -256,8 +256,8 @@ export default function Contact() {
                     <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-foreground mb-1">Email</h4>
-                      <a href="mailto:contact@fixmylaptopandpc.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                        contact@fixmylaptopandpc.com
+                      <a href="mailto:fixmylaptopandpc@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                        fixmylaptopandpc@gmail.com
                       </a>
                     </div>
                   </div>
@@ -278,7 +278,7 @@ export default function Contact() {
                 <CardContent className="p-0">
                   <div className="aspect-square rounded-lg overflow-hidden">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.558!2d73.8567!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMxJzEzLjQiTiA3M8KwNTEnMjQuMSJF!5e0!3m2!1sen!2sin!4v1234567890"
+                      src="https://www.google.com/maps?q=Pansare+Nagar+Lane+No.+3+Yewalewadi+Pune+411048&t=m&z=17&hl=en&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}

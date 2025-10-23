@@ -12,7 +12,6 @@ import mobileRepair from "@assets/generated_images/Mobile_phone_repair_service_7
 import shopExterior from "@assets/generated_images/Repair_shop_exterior_storefront_31c05880.png";
 import shopInterior from "@assets/generated_images/Repair_shop_interior_workspace_789dda39.png";
 import beforeAfter from "@assets/generated_images/Laptop_before_after_repair_34859cf1.png";
-import customerDelivery from "@assets/generated_images/Customer_laptop_delivery_satisfaction_c9d093cb.png";
 import toolsWorkstation from "@assets/generated_images/Organized_repair_tools_workstation_3e3b288b.png";
 import motherboardDiagnostic from "@assets/generated_images/Motherboard_diagnostic_testing_work_3a2ea36e.png";
 import dataRecovery from "@assets/generated_images/Professional_data_recovery_service_546c50fc.png";
@@ -29,7 +28,6 @@ const defaultGallery: GalleryItem[] = [
   { id: "5", image: shopExterior, title: "Our Shop", category: "Shop Interior", description: "Visit us in Yewalewadi, Pune" },
   { id: "6", image: shopInterior, title: "Clean Work Environment", category: "Shop Interior", description: "Organized and professional workspace" },
   { id: "7", image: beforeAfter, title: "Before & After Repair", category: "Before/After", description: "Quality repair transformation" },
-  { id: "8", image: customerDelivery, title: "Happy Customer", category: "Before/After", description: "Satisfied customer receiving repaired laptop" },
   { id: "9", image: toolsWorkstation, title: "Professional Tools", category: "Shop Interior", description: "State-of-the-art repair equipment" },
   { id: "10", image: motherboardDiagnostic, title: "Diagnostic Testing", category: "Repair Work", description: "Thorough motherboard diagnostics" },
   { id: "11", image: dataRecovery, title: "Data Recovery Service", category: "Repair Work", description: "Professional data recovery" },

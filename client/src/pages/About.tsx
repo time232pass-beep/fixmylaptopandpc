@@ -6,7 +6,7 @@ import shopExterior from "@assets/generated_images/Repair_shop_exterior_storefro
 import shopInterior from "@assets/generated_images/Repair_shop_interior_workspace_789dda39.png";
 
 export default function About() {
-  const whatsappUrl = "https://wa.me/919876543210";
+  const whatsappUrl = "https://wa.me/919373285987";
 
   const whyChooseUs = [
     {
@@ -157,7 +157,7 @@ export default function About() {
                 <div className="pt-4">
                   <Button variant="outline" asChild className="w-full sm:w-auto" data-testid="button-get-directions">
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Yewalewadi+Pune"
+                      href="https://maps.app.goo.gl/LPTDP8KWGLTPAjcw8"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
@@ -171,7 +171,7 @@ export default function About() {
             </Card>
             <div className="aspect-video lg:aspect-square rounded-xl overflow-hidden bg-muted flex items-center justify-center">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.558!2d73.8567!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMxJzEzLjQiTiA3M8KwNTEnMjQuMSJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps?q=Pansare+Nagar+Lane+No.+3+Yewalewadi+Pune+411048&z=17&hl=en&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

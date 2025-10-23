@@ -1,6 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
+import { notifyAll } from "./notify";
 import { insertReviewSchema, insertGalleryItemSchema, insertContactSubmissionSchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -87,6 +88,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertContactSubmissionSchema.parse(req.body);
       const submission = await storage.createContactSubmission(validatedData);
+      // Fire-and-forget notifications (email + WhatsApp). Do not block response.
+      notifyAll({
+        name: validatedData.name,
+        email: validatedData.email,
+        phone: validatedData.phone,
+        service: validatedData.service,
+        message: validatedData.message,
+      }).catch(() => {
+        // ignore notification errors
+      });
       res.status(201).json(submission);
     } catch (error) {
       if (error instanceof Error) {
