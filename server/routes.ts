@@ -88,16 +88,20 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertContactSubmissionSchema.parse(req.body);
       const submission = await storage.createContactSubmission(validatedData);
+      
       // Fire-and-forget notifications (email + WhatsApp). Do not block response.
+      console.log('[ROUTES] About to call notifyAll with:', { name: validatedData.name, email: validatedData.email });
       notifyAll({
         name: validatedData.name,
         email: validatedData.email,
         phone: validatedData.phone,
         service: validatedData.service,
         message: validatedData.message,
-      }).catch(() => {
-        // ignore notification errors
+      }).catch((err) => {
+        // Log notification errors but don't break the request
+        console.error('[ROUTES] notifyAll error caught:', err.message);
       });
+      
       res.status(201).json(submission);
     } catch (error) {
       if (error instanceof Error) {

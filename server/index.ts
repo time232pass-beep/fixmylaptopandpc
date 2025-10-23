@@ -3,6 +3,14 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
+// Log environment variable status on startup
+console.log('[SERVER] Environment variables loaded:', {
+  hasSmtpUser: !!process.env.SMTP_USER,
+  hasSmtpPass: !!process.env.SMTP_PASS,
+  hasNotifyTo: !!process.env.NOTIFY_TO,
+  nodeEnv: process.env.NODE_ENV
+});
+
 const app = express();
 
 declare module 'http' {
