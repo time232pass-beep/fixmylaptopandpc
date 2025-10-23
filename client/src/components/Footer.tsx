@@ -24,7 +24,7 @@ export function Footer() {
               Your trusted partner for professional laptop, PC, and mobile repair services in Yewalewadi, Pune.
             </p>
             <div className="flex items-center gap-2 px-4 py-2 bg-secondary rounded-md">
-              <span className="text-xs font-semibold text-secondary-foreground">Trusted by 1000+ customers</span>
+              <span className="text-xs font-semibold text-secondary-foreground">Quality repairs • Honest pricing</span>
             </div>
           </div>
 

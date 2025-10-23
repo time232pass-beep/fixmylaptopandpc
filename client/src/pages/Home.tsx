@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
-import { Laptop, Monitor, Smartphone, CheckCircle, Award, Clock, Users, Star, ArrowRight, Phone } from "lucide-react";
+import { Laptop, Monitor, Smartphone, CheckCircle, Award, Clock, Users, Star, ArrowRight, Phone, Shield } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -225,23 +225,32 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-6">
               <Card className="text-center p-6">
-                <div className="text-4xl font-bold text-primary mb-2">5+</div>
-                <div className="text-muted-foreground text-sm">Years Experience</div>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="text-4xl font-bold text-primary mb-2">1000+</div>
-                <div className="text-muted-foreground text-sm">Happy Customers</div>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="text-4xl font-bold text-primary mb-2">98%</div>
-                <div className="text-muted-foreground text-sm">Satisfaction Rate</div>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="w-full h-full flex flex-col items-center justify-center">
-                  <Clock className="w-8 h-8 text-primary mb-2" />
-                  <div className="text-sm font-semibold text-foreground">24/7</div>
-                  <div className="text-xs text-muted-foreground">Service Available</div>
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Award className="w-6 h-6 text-primary" />
                 </div>
+                <div className="text-sm font-semibold text-foreground">Certified</div>
+                <div className="text-xs text-muted-foreground">Technicians</div>
+              </Card>
+              <Card className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <CheckCircle className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-sm font-semibold text-foreground">Quality</div>
+                <div className="text-xs text-muted-foreground">Service</div>
+              </Card>
+              <Card className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Clock className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-sm font-semibold text-foreground">24/7</div>
+                <div className="text-xs text-muted-foreground">Available</div>
+              </Card>
+              <Card className="text-center p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Shield className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-sm font-semibold text-foreground">Warranty</div>
+                <div className="text-xs text-muted-foreground">Covered</div>
               </Card>
             </div>
             

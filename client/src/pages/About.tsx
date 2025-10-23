@@ -51,9 +51,9 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  FixMy Laptop & PC has been serving the Yewalewadi community in Pune for over 5 years. 
-                  What started as a small repair shop has grown into one of the most trusted names in 
-                  electronics repair in the area.
+                  FixMy Laptop & PC is your trusted partner for electronics repair in Yewalewadi, Pune. 
+                  We're committed to providing honest, reliable, and professional repair services 
+                  for laptops, desktops, and mobile devices.
                 </p>
                 <p>
                   Our mission is simple: to provide fast, reliable, and affordable repair services 
@@ -81,29 +81,29 @@ export default function About() {
                 <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-foreground mb-2">5+</div>
-                <div className="text-sm text-muted-foreground">Years of Excellence</div>
+                <div className="text-2xl font-bold text-foreground mb-2">Certified</div>
+                <div className="text-sm text-muted-foreground">Expert Technicians</div>
               </Card>
               <Card className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100">
                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-foreground mb-2">98%</div>
-                <div className="text-sm text-muted-foreground">Customer Satisfaction</div>
+                <div className="text-2xl font-bold text-foreground mb-2">Warranty</div>
+                <div className="text-sm text-muted-foreground">On All Repairs</div>
               </Card>
               <Card className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100">
                 <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-foreground mb-2">5000+</div>
-                <div className="text-sm text-muted-foreground">Devices Repaired</div>
+                <div className="text-2xl font-bold text-foreground mb-2">Quality</div>
+                <div className="text-sm text-muted-foreground">Genuine Parts</div>
               </Card>
               <Card className="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100">
                 <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Clock className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-foreground mb-2">24/7</div>
-                <div className="text-sm text-muted-foreground">Service Available</div>
+                <div className="text-2xl font-bold text-foreground mb-2">24/7</div>
+                <div className="text-sm text-muted-foreground">Always Available</div>
               </Card>
             </div>
           </div>
@@ -199,23 +199,14 @@ export default function About() {
 
       <section className="py-12 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-4xl font-bold text-primary-foreground mb-2">5+</div>
-              <div className="text-primary-foreground/80">Years in Business</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-primary-foreground mb-2">1000+</div>
-              <div className="text-primary-foreground/80">Happy Customers</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-primary-foreground mb-2">5000+</div>
-              <div className="text-primary-foreground/80">Devices Repaired</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-primary-foreground mb-2">98%</div>
-              <div className="text-primary-foreground/80">Satisfaction Rate</div>
-            </div>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-primary-foreground mb-4">
+              Your Trusted Repair Partner
+            </h2>
+            <p className="text-primary-foreground/90 text-lg max-w-2xl mx-auto">
+              Professional laptop, PC, and mobile repair services in Yewalewadi, Pune. 
+              Quality workmanship, genuine parts, and honest pricing.
+            </p>
           </div>
         </div>
       </section>
