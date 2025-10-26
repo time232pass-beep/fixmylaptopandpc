@@ -169,7 +169,7 @@ export default function Gallery() {
             <ChevronRight className="w-8 h-8" />
           </button>
 
-          <div className="max-w-6xl max-h-[90vh] px-16">
+          <div className="max-w-6xl max-h-[90vh] px-4 sm:px-8 lg:px-16">
             <img
               src={filteredItems[lightboxIndex].image}
               alt={filteredItems[lightboxIndex].title}
