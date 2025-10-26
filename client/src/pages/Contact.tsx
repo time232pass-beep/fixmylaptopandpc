@@ -105,7 +105,7 @@ export default function Contact() {
                               <FormItem>
                                 <FormLabel>Full Name</FormLabel>
                                 <FormControl>
-                                  <Input placeholder="John Doe" {...field} data-testid="input-name" />
+                                  <Input placeholder="John Doe" autoComplete="name" {...field} data-testid="input-name" />
                                 </FormControl>
                                 <FormMessage />
                               </FormItem>
@@ -118,7 +118,7 @@ export default function Contact() {
                               <FormItem>
                                 <FormLabel>Email</FormLabel>
                                 <FormControl>
-                                  <Input type="email" placeholder="john@example.com" {...field} data-testid="input-email" />
+                                  <Input type="email" placeholder="john@example.com" autoComplete="email" inputMode="email" {...field} data-testid="input-email" />
                                 </FormControl>
                                 <FormMessage />
                               </FormItem>
@@ -134,7 +134,7 @@ export default function Contact() {
                               <FormItem>
                                 <FormLabel>Phone Number</FormLabel>
                                 <FormControl>
-                                  <Input type="tel" placeholder="+91 98765 43210" {...field} data-testid="input-phone" />
+                                  <Input type="tel" placeholder="+91 98765 43210" autoComplete="tel" inputMode="tel" {...field} data-testid="input-phone" />
                                 </FormControl>
                                 <FormMessage />
                               </FormItem>

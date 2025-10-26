@@ -16,6 +16,8 @@ export function Navigation() {
                 className="h-8 w-8"
                 src="/favicon.png"
                 alt="FixMy Laptop & PC"
+                width={32}
+                height={32}
               />
               <span className="ml-2 text-xl font-bold text-gray-900">
                 FixMy Laptop & PC
@@ -60,13 +62,15 @@ export function Navigation() {
             aria-label="Toggle menu"
             className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100"
             onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
         {open && (
-          <div className="md:hidden border-t border-gray-200 py-3 space-y-1">
+          <div id="mobile-menu" className="md:hidden border-t border-gray-200 py-3 space-y-1">
             <Link href="/" className={`block px-3 py-2 rounded-md ${isActive("/") ? "bg-gray-100 text-blue-700 font-semibold" : "text-gray-700 hover:bg-gray-50"}`} onClick={() => setOpen(false)}>Home</Link>
             <Link href="/services" className={`block px-3 py-2 rounded-md ${isActive("/services") ? "bg-gray-100 text-blue-700 font-semibold" : "text-gray-700 hover:bg-gray-50"}`} onClick={() => setOpen(false)}>Services</Link>
             <Link href="/reviews" className={`block px-3 py-2 rounded-md ${isActive("/reviews") ? "bg-gray-100 text-blue-700 font-semibold" : "text-gray-700 hover:bg-gray-50"}`} onClick={() => setOpen(false)}>Reviews</Link>

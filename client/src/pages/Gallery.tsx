@@ -121,6 +121,9 @@ export default function Gallery() {
                     src={item.image}
                     alt={item.title}
                     className="w-full h-auto object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity">
                     <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
